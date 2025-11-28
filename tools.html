@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Tools Showcase - Інструменти</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="Dev Tools Showcase: Головна">
+            <img 
+                src="/src/assets/logo.png" 
+                srcset="/src/assets/logo.png 1x, /src/assets/logo@2x.png 2x" 
+                height="100" 
+                alt="Логотип Dev Tools Showcase">
+            </a>
+        </div>
+        
+        <nav aria-label="Основна навігація">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tools.html" aria-current="page">Tools</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tools-page-layout">
+        <aside aria-label="Фільтри інструментів">
+            <h3>Search and Filters</h3>
+            
+            <form role="search">
+                <label for="search-by-name">Search by name</label>
+                <input type="text" id="search-by-name" name="search" placeholder="Пошук">
+                <button type="submit" aria-label="Пошук інструменту">🔍</button>
+            </form>
+            
+            <nav aria-label="Categories list">
+                <ul>
+                    <li><a href="tool-details.html?id=bubble-sort">Tool 1</a></li>
+                    <li><a href="tool-details.html?id=quick-sort">Tool 2</a></li>
+                    <li><a href="tool-details.html?id=foo">Tool 3</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section aria-labelledby="tools-list-heading">
+            <aside class="stats" role="complementary" aria-label="statistics">
+                <p>Most popular tool of all time is <b>name</b> with almost 1000000 uses and other statistics like usage statistics and active users statistics</p>
+            </aside>
+            
+            <div class="tool-grid">
+                <article class="tool-card">
+                    <h2><a href="tool-details.html">Name</a></h2>
+                    <div class="code-snippet" role="region" aria-label="Фрагмент коду для інструменту">
+                        <pre><code>Code snippet</code></pre>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Tag1</span>
+                        <span class="tag">Tag1</span>
+                        <span class="tag">Tag1</span>
+                    </div>
+                </article>
+                </div>
+            
+            <nav aria-label="Навігація по сторінках інструментів" class="pagination">
+                <ol>
+                    <li><a href="#" aria-label="Попередня сторінка" role="button">&lt;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#" aria-current="page">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#" aria-label="Наступна сторінка" role="button">&gt;</a></li>
+                </ol>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dev Tools Showcase | <a href="https://github.com/olegbb1502/web-template-2025">@github</a></p>
+    </footer>
+
+</body>
+</html>
